@@ -8,11 +8,12 @@ from colorama import Fore, Style, init
 
 os.system("mode con: cols=120 lines=40")
 
-
+from frontend.loadingscreen import *
 from frontend.mainmenu import *
 from frontend.tweaks import *
 
 menu_screens = {
+    "Home": main,
     "Tweaks": tweaks_screen
 }
 
@@ -20,13 +21,16 @@ menu_screens = {
 init(autoreset=True)
 
 def run_app():
+    loadingscreenanimation()
+    time.sleep(0.3)
     main()
 
     while True:
         choice = input(" Enter Option: ").strip()
 
         option_map = {
-            "1": "Tweaks"
+            "1": "Tweaks",
+            "back": "Home"
         }
 
         key = option_map.get(choice)

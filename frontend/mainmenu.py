@@ -20,14 +20,22 @@ def options():
     print(f"{Fore.LIGHTMAGENTA_EX} TWEAK")
     print(f"{Fore.WHITE} --------------------------------")
     print(f"{Fore.MAGENTA} [1] | Tweak Options")
+    print(f"{Fore.WHITE} --------------------------------")
 
 def changelog():
+    print(" ")
+    print(" ")
+    print(" ")
+    print(" ")
+    print(" ")
+    print(" ")
     print(f"{Fore.WHITE} --------------------------------")
     print(f"{Fore.RED} [98] | {Fore.WHITE} Check for Updates")
     print(f"{Fore.RED} [99] | {Fore.WHITE} vTweaker Changelog")
+    print(f"{Fore.WHITE} --------------------------------")
+    print(" ")
 
 def main():
-    loadingscreenanimation()
     clear()
     header()
     options()

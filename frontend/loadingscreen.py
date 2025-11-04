@@ -49,7 +49,7 @@ $$  \ /$$/   $$ | $$ | $$ | $$ |/$$$$$$  | $$$$$$  |$$ |_/$$/
     $/       $$/   $$$$$/$$$$/   $$$$$$$/  $$$$$$$/ $$/   $$/ 
 """
 
-animation = [ne, nw, se, sw]
+animation = [nw, ne, se, sw, se, ne]
 
 # Colors the $ in blue
 def colorize_dollars(text):
