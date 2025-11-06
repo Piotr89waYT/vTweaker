@@ -8,13 +8,15 @@ from colorama import Fore, Style, init
 
 os.system("mode con: cols=120 lines=40")
 
-from frontend.loadingscreen import *
+from backend.globalfunctions.loadingscreen import *
 from frontend.mainmenu import *
 from frontend.tweaks import *
+from frontend.changelog import *
 
 menu_screens = {
     "Home": main,
-    "Tweaks": tweaks_screen
+    "Tweaks": tweaks_screen,
+    "Changelog": changelogfunc
 }
 
 # Initialize colorama
@@ -30,6 +32,7 @@ def run_app():
 
         option_map = {
             "1": "Tweaks",
+            "99": "Changelog",
             "back": "Home"
         }
 
