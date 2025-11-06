@@ -1,6 +1,8 @@
 .gitignore
 .gitattributes
 to-do.txt
+vTweaker.bat
+
 
 # Byte-compiled / optimized / DLL files
 __pycache__/
